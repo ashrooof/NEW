@@ -1,321 +1,285 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>ESME | التقديم للأعضاء الجدد</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>استوديو التصميم</title>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;600;700&family=Playfair+Display:wght@700&family=Reem+Kufi:wght@400;700&family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#f7f4ee;--card:#fff;--ink:#0f1f3d;--mut:#5b6679;--line:#e4e0d6;--navy:#13294b;--gold:#b8923b;--ok:#1f7a4d;--bad:#b3261e;--warn:#9a6a00}
-*{box-sizing:border-box}body{margin:0;font-family:Tajawal,system-ui,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink);line-height:1.7}
-a{color:var(--navy)}h1,h2,h3{line-height:1.3;margin:0 0 .6rem}
-.top{position:sticky;top:0;z-index:5;background:rgba(247,244,238,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:.5rem;padding:.6rem 1rem;flex-wrap:wrap}
-.brand{display:flex;align-items:baseline;gap:.5rem;text-decoration:none;color:var(--navy)}.brand b{font:800 1.5rem Georgia,serif;letter-spacing:.08em}.brand span{font-size:.85rem;color:var(--mut)}
-nav{display:flex;gap:.25rem;flex-wrap:wrap}nav a,nav button{border:0;background:none;font:inherit;color:var(--navy);padding:.4rem .8rem;border-radius:99px;cursor:pointer;text-decoration:none}nav a:hover,nav button:hover,nav a.on{background:#ece6d6}
-.wrap{max-width:1100px;margin:0 auto;padding:1.5rem 1rem}.narrow{max-width:640px}
-.hero{background:linear-gradient(135deg,#fffdf7,#efe8d6);border:1px solid var(--line);border-radius:22px;padding:2.2rem 1.4rem;text-align:center;position:relative;overflow:hidden}
-.hero:before{content:"";position:absolute;inset:auto -40px -60px auto;width:220px;height:220px;border-radius:50%;border:14px solid rgba(184,146,59,.18)}
-.hero h1{font-size:clamp(1.7rem,5vw,2.8rem);color:var(--navy)}.hero p{color:var(--mut);max-width:560px;margin:.4rem auto 1.2rem}
-.pill{display:inline-block;padding:.15rem .8rem;border-radius:99px;font-size:.85rem;font-weight:700}.open{background:#e3f4ea;color:var(--ok)}.closed{background:#fbe6e4;color:var(--bad)}
-.btn{display:inline-block;border:0;background:var(--navy);color:#fff;font:700 1rem Tajawal,sans-serif;padding:.7rem 1.4rem;border-radius:12px;cursor:pointer;text-decoration:none;min-height:44px}
-.btn:hover{background:#0c1d38}.btn.ghost{background:#fff;color:var(--navy);border:1px solid var(--navy)}.btn.sm{padding:.35rem .9rem;min-height:36px;font-size:.9rem}.btn.bad{background:var(--bad)}.btn.ok{background:var(--ok)}.btn:disabled{opacity:.55;cursor:wait}
-.grid{display:grid;gap:.9rem;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:1.1rem}
-.card h3{color:var(--navy)}.card .gold{color:var(--gold);font-weight:800}.stat b{display:block;font-size:1.9rem;color:var(--navy)}
-section.blk{margin-top:1.8rem}details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:.7rem 1rem;margin:.5rem 0}summary{cursor:pointer;font-weight:700}
-.f{margin:.8rem 0}label{display:block;font-weight:700;margin-bottom:.25rem}input,select,textarea{width:100%;font:inherit;padding:.6rem .8rem;border:1px solid #cfc9b8;border-radius:10px;background:#fff;color:var(--ink);min-height:44px}
-input:focus,select:focus,textarea:focus,button:focus-visible,a:focus-visible{outline:3px solid rgba(184,146,59,.5);outline-offset:1px}
-textarea{min-height:100px;resize:vertical}.chk{display:flex;gap:.5rem;align-items:flex-start;font-weight:400}.chk input{width:22px;height:22px;min-height:0;margin-top:.2rem}
-.err{color:var(--bad);display:block;min-height:1.1em;font-size:.88rem}.hint{color:var(--mut);font-size:.88rem}
-#pv{max-width:140px;max-height:140px;border-radius:50%;border:3px solid var(--gold);margin-top:.5rem;object-fit:cover}
-.code{font:800 1.8rem Georgia,monospace;letter-spacing:.12em;direction:ltr;background:#fff8e6;border:2px dashed var(--gold);border-radius:14px;padding:1rem;text-align:center;user-select:all}
-.bar{display:grid;gap:.5rem;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));margin-bottom:.8rem}.bar #q{grid-column:1/-1}
-.tabs{display:flex;gap:.3rem;overflow-x:auto;border-bottom:1px solid var(--line);margin-bottom:1rem}.tabs button{border:0;background:none;font:700 1rem Tajawal;padding:.6rem 1rem;cursor:pointer;color:var(--mut);white-space:nowrap;border-bottom:3px solid transparent}.tabs button.on{color:var(--navy);border-color:var(--gold)}
-.tw{overflow-x:auto}table{width:100%;border-collapse:collapse;min-width:620px}th,td{text-align:right;padding:.55rem .6rem;border-bottom:1px solid var(--line);font-size:.95rem}th{color:var(--mut);font-weight:700}
-.st{padding:.1rem .6rem;border-radius:99px;font-size:.82rem;font-weight:700;white-space:nowrap}.PENDING{background:#fff1cc;color:var(--warn)}.ACCEPTED{background:#e3f4ea;color:var(--ok)}.REJECTED{background:#fbe6e4;color:var(--bad)}
-.pg{display:flex;gap:.5rem;align-items:center;justify-content:center;margin-top:.8rem}.empty{text-align:center;color:var(--mut);padding:2rem}
-dialog{border:0;border-radius:18px;padding:1.2rem;width:min(640px,94vw);max-height:90vh;box-shadow:0 20px 60px rgba(0,0,0,.3)}dialog::backdrop{background:rgba(15,31,61,.5)}
-.kv{display:grid;grid-template-columns:120px 1fr;gap:.2rem .8rem}.kv dt{color:var(--mut)}.kv dd{margin:0;overflow-wrap:anywhere}
-#toast{position:fixed;inset:auto 1rem 1rem 1rem;display:grid;gap:.4rem;pointer-events:none;z-index:20}#toast div{background:var(--navy);color:#fff;padding:.7rem 1rem;border-radius:12px;max-width:420px;margin-inline:auto;box-shadow:0 8px 24px rgba(0,0,0,.25)}#toast .bad{background:var(--bad)}
-.spin{display:inline-block;width:1em;height:1em;border:3px solid #d9d2bd;border-top-color:var(--navy);border-radius:50%;animation:r .8s linear infinite;vertical-align:-3px}@keyframes r{to{transform:rotate(360deg)}}
-.sep{display:flex;align-items:center;gap:.6rem;color:var(--mut);margin:1rem 0}.sep:before,.sep:after{content:"";flex:1;border-top:1px solid var(--line)}
-@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
-@media(max-width:560px){.kv{grid-template-columns:1fr}.top{padding:.5rem .7rem}}
+:root{--bg:#0d0d0f;--panel:#17171b;--line:#2a2a31;--ink:#f3ecd8;--mute:#9b957f;--gold:#d4a94f;--on:#1a1405;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#f6f1e4;--panel:#fffdf6;--line:#e1d8bf;--ink:#1b1810;--mute:#7a7358;--gold:#a97b18;--on:#fffdf6}}
+:root[data-theme="dark"]{--bg:#0d0d0f;--panel:#17171b;--line:#2a2a31;--ink:#f3ecd8;--mute:#9b957f;--gold:#d4a94f;--on:#1a1405}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Cairo,system-ui,"Segoe UI",Tahoma,sans-serif;max-width:900px;margin-inline:auto;padding:14px}
+h1{font-size:20px;margin:6px 0 12px;color:var(--gold)}
+.stage{background:repeating-conic-gradient(#8883 0 25%,#0000 0 50%) 0 0/16px 16px;border:1px solid var(--line);border-radius:12px;overflow:hidden;display:flex;justify-content:center}
+canvas{display:block;max-width:100%;height:auto;touch-action:none}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px;margin-top:12px}
+.card h2{font-size:14px;margin:0 0 10px;color:var(--mute);font-weight:600}
+.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:8px}
+button,select,input[type=number],textarea{font:inherit;font-size:14px;background:var(--bg);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:8px 12px}
+button{cursor:pointer}
+button:disabled,input:disabled,textarea:disabled,select:disabled{opacity:.45}
+button.p{background:var(--gold);color:var(--on);border-color:var(--gold);font-weight:700}
+button.d{color:#e5645a}
+textarea{width:100%;resize:vertical;min-height:64px}
+input[type=number]{width:84px}
+.sl{display:grid;grid-template-columns:78px 1fr 52px;gap:8px;align-items:center;font-size:13px;margin:6px 0}
+.sl input{width:100%;accent-color:var(--gold)}
+.sl span:last-child{color:var(--mute);text-align:left;direction:ltr}
+label{font-size:13px;color:var(--mute)}
+input[type=color]{width:38px;height:34px;border:1px solid var(--line);border-radius:8px;background:none;padding:2px}
+.hint{font-size:12px;color:var(--mute);margin:8px 0 0}
+#msg{font-size:13px;color:var(--gold);min-height:18px;margin-top:6px}
 </style>
 </head>
 <body>
-<header class="top"><a class="brand" href="#/"><b>ESME</b><span>التقديم للأعضاء الجدد</span></a><nav id="nav" aria-label="التنقل"></nav></header>
-<main id="app" tabindex="-1"></main>
-<div id="toast" role="status" aria-live="polite"></div>
-<dialog id="dlg"></dialog>
+<h1>استوديو التصميم</h1>
+<div class="stage"><canvas id="cv"></canvas></div>
+<p class="hint">اسحب أي عنصر لتحريكه • اسحب النقطة الذهبية في ركنه لتكبيره • أو استخدم المنزلقات</p>
+
+<div class="card">
+<h2>قوالب جاهزة (إطار ذهبي + عنوان + شعار)</h2>
+<div class="row">
+<button class="p" data-t="banner">بانر 16:9</button>
+<button class="p" data-t="square">منشور مربع</button>
+<button class="p" data-t="story">ستوري 9:16</button>
+</div>
+<p class="hint" style="margin-top:0">أضف صورتك أولًا ثم اختر القالب لتوضع داخل الإطار.</p>
+</div>
+
+<div class="card">
+<h2>الطبقات</h2>
+<div class="row">
+<button class="p" id="add">+ صور</button>
+<button id="addtx">+ نص</button>
+<button id="fill">ملء اللوحة</button>
+<button id="fit">احتواء</button>
+<button id="ctr">توسيط</button>
+<button id="up">للأمام</button>
+<button id="dn">للخلف</button>
+<button class="d" id="del">حذف</button>
+</div>
+<div class="sl"><span>الحجم</span><input type="range" id="sc" min="5" max="500" value="100"><span id="scv">100%</span></div>
+<div class="sl"><span>الدوران</span><input type="range" id="rt" min="-180" max="180" value="0"><span id="rtv">0°</span></div>
+<div class="sl"><span>الشفافية</span><input type="range" id="op" min="5" max="100" value="100"><span id="opv">100%</span></div>
+<div class="sl"><span>إطار الصورة</span><input type="range" id="bd" min="0" max="30" value="0"><span id="bdv">0</span></div>
+<div class="row"><label><input type="checkbox" id="fh"> قلب أفقي</label></div>
+<input type="file" id="file" accept="image/*" multiple hidden>
+</div>
+
+<div class="card">
+<h2>النص المحدد</h2>
+<textarea id="tx" placeholder="اختر طبقة نص أو أضف نصًا جديدًا"></textarea>
+<div class="row" style="margin-top:8px">
+<select id="fo"><option>Cairo</option><option>Tajawal</option><option>Amiri</option><option>Reem Kufi</option><option>Playfair Display</option></select>
+<input type="color" id="tc" value="#f3ecd8" title="لون النص">
+<label><input type="checkbox" id="tg"> ذهبي متدرّج</label>
+<label><input type="checkbox" id="tb"> عريض</label>
+</div>
+</div>
+
+<div class="card">
+<h2>مقاس اللوحة والإطار</h2>
+<div class="row">
+<select id="pre">
+<option value="1920x1080">16:9 — 1920×1080</option>
+<option value="1080x1080">1:1 — 1080×1080</option>
+<option value="1080x1350">4:5 — 1080×1350</option>
+<option value="1080x1920">9:16 — 1080×1920</option>
+<option value="3840x2160">4K — 3840×2160</option>
+<option value="1200x630">1200×630 (مشاركة)</option>
+<option value="custom">مخصص</option>
+</select>
+<input type="number" id="cw" min="100" max="8000" value="1920"> ×
+<input type="number" id="ch" min="100" max="8000" value="1080">
+<input type="color" id="bgc" value="#0b0b0b" title="لون الخلفية">
+<label><input type="checkbox" id="tr"> خلفية شفافة</label>
+</div>
+<div class="row"><label><input type="checkbox" id="fr"> إطار ذهبي للوحة</label></div>
+<div class="sl"><span>سماكة الإطار</span><input type="range" id="ft" min="4" max="40" value="14"><span id="ftv">14</span></div>
+</div>
+
+<div class="card">
+<h2>التصدير</h2>
+<div class="row">
+<select id="fmt"><option value="png">PNG (أعلى جودة)</option><option value="jpg">JPG</option><option value="webp">WebP</option></select>
+<select id="mul"><option value="1">×1 (المقاس نفسه)</option><option value="2" selected>×2 (جودة أعلى)</option><option value="3">×3</option></select>
+<button class="p" id="dl">تنزيل الصورة</button>
+</div>
+<div id="msg"></div>
+</div>
+
 <script>
-'use strict';
-const API = 'REPLACE_WITH_WEB_APP_EXEC_URL'; // رابط نشر Apps Script (ينتهي بـ /exec)
-const $ = (s, r = document) => r.querySelector(s);
-const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
-const S = { cfg: null, tok: sessionStorage.getItem('esme_t'), me: JSON.parse(sessionStorage.getItem('esme_p') || 'null'), gmode: 'login' };
-const ST = { PENDING: 'قيد المراجعة', ACCEPTED: 'مقبول', REJECTED: 'غير مقبول' };
-const COM = { Academic: 'Academic', HR: 'HR', PR: 'PR', Media: 'Media', OC: 'OC' };
-const COMDESC = { Academic: 'الجانب الأكاديمي والمحتوى التعليمي', HR: 'شؤون الأعضاء والتنظيم الداخلي', PR: 'العلاقات العامة والشراكات', Media: 'الإعلام وإدارة السوشيال ميديا', OC: 'اللجنة التنظيمية وتنفيذ الفعاليات' };
+const cv=document.getElementById('cv'),ctx=cv.getContext('2d');
+const $=id=>document.getElementById(id);
+let L=[],sel=null,W=1920,H=1080,bg='#0b0b0b',transp=false,drag=null,frame={on:false,t:14};
 
-async function api(action, p = {}) {
-  let r;
-  try {
-    const res = await fetch(API, { method: 'POST', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify(Object.assign({}, p, { action, token: S.tok || '' })) });
-    r = await res.json();
-  } catch (e) { throw { message: 'تعذر الاتصال بالخادم، تحقق من الإنترنت.' }; }
-  if (!r.ok) { if (r.code === 'AUTH' && S.tok) { localOut(); toast(r.message, 1); location.hash = '#/login'; } throw r; }
-  return r.data;
+function size(){cv.width=W;cv.height=H;draw()}
+function dims(l){return[l.bw*l.s,l.bh*l.s]}
+function gold(c,w,h){const g=c.createLinearGradient(-w/2,-h/2,w/2,h/2);[[0,'#8a6a1f'],[.3,'#f3dc9a'],[.55,'#d4a94f'],[.8,'#f3dc9a'],[1,'#8a6a1f']].forEach(s=>g.addColorStop(s[0],s[1]));return g}
+function fontStr(l){return(l.b?'700 ':'400 ')+l.fs+'px "'+l.font+'"'}
+function meas(l){ctx.save();ctx.font=fontStr(l);const ls=l.txt.split('\n');l.bw=Math.max(10,...ls.map(t=>ctx.measureText(t).width));l.bh=ls.length*l.fs*1.35;ctx.restore()}
+function drawText(c,l){
+  c.font=fontStr(l);c.textAlign='center';c.textBaseline='middle';
+  c.fillStyle=l.g?gold(c,l.bw,l.bh):l.col;
+  const ls=l.txt.split('\n');
+  ls.forEach((t,i)=>c.fillText(t,0,(i-(ls.length-1)/2)*l.fs*1.35));
 }
-function toast(m, bad) { const d = document.createElement('div'); d.textContent = m; if (bad) d.className = 'bad'; $('#toast').appendChild(d); setTimeout(() => d.remove(), 4500); }
-function busy(b, on, txt) { b.disabled = on; if (on) { b.dataset.t = b.textContent; b.innerHTML = '<span class="spin"></span> ' + (txt || 'جارٍ المعالجة…'); } else b.textContent = b.dataset.t || b.textContent; }
-const view = h => { $('#app').innerHTML = h; window.scrollTo(0, 0); };
-const fld = (id, label, input, hint) => `<div class="f"><label for="${id}">${label}</label>${input}${hint ? `<span class="hint">${hint}</span>` : ''}<small class="err" id="e-${id}" role="alert"></small></div>`;
-const opts = (a, ph) => (ph ? `<option value="">${ph}</option>` : '') + a.map(x => `<option value="${esc(x)}">${esc(x)}</option>`).join('');
-function setErr(id, m) { const e = $('#e-' + id); if (e) e.textContent = m || ''; }
-function openDlg(h) { const d = $('#dlg'); d.innerHTML = h + '<div style="margin-top:1rem"><button class="btn ghost sm" id="dx">إغلاق</button></div>'; $('#dx').onclick = () => d.close(); if (!d.open) d.showModal(); return d; }
-function localOut() { S.tok = null; S.me = null; sessionStorage.removeItem('esme_t'); sessionStorage.removeItem('esme_p'); nav(); }
-function setSession(d) { S.tok = d.token; S.me = d.profile; sessionStorage.setItem('esme_t', d.token); sessionStorage.setItem('esme_p', JSON.stringify(d.profile)); nav(); }
-
-function nav() {
-  const open = S.cfg && S.cfg.open;
-  $('#nav').innerHTML = `<a href="#/">الرئيسية</a>${open ? '<a href="#/apply">التقديم</a>' : ''}<a href="#/status">استعلام</a>` +
-    (S.me ? `<a href="#/admin">لوحة الإدارة</a><button id="lo">خروج</button>` : '<a href="#/login">دخول الإدارة</a>');
-  const b = $('#lo'); if (b) b.onclick = async () => { try { await api('logout'); } catch (e) {} localOut(); location.hash = '#/'; };
-}
-async function route() {
-  if (!S.cfg) {
-    view('<div class="empty"><span class="spin"></span> جارٍ التحميل…</div>');
-    try { S.cfg = await api('public_config'); } catch (e) { view(`<div class="wrap narrow card"><h2>تعذر تحميل الموقع</h2><p>${esc(e.message)}</p><button class="btn" onclick="location.reload()">إعادة المحاولة</button></div>`); return; }
-    nav();
-  }
-  const r = (location.hash.slice(2) || '').split('?')[0];
-  ({ '': vHome, apply: vApply, status: vStatus, login: vLogin, admin: vAdmin }[r] || vHome)();
-}
-window.addEventListener('hashchange', route);
-
-/* ───── الرئيسية ───── */
-function vHome() {
-  const c = S.cfg;
-  view(`<div class="wrap"><section class="hero"><span class="pill ${c.open ? 'open' : 'closed'}">${c.open ? 'باب التقديم مفتوح' : 'باب التقديم مغلق حاليًا'}</span>
-  <h1>انضم إلى أسرة ESME</h1><p>قدّم على اللجنة التي تناسبك، وتابع حالة طلبك بكود خاص يصلك بعد التقديم.</p>
-  ${c.open ? '<a class="btn" href="#/apply">ابدأ التقديم</a> ' : ''}<a class="btn ghost" href="#/status">استعلام عن طلب</a></section>
-  <section class="blk"><h2>اللجان المتاحة</h2><div class="grid">${c.committees.map(x => `<div class="card"><h3>${esc(COM[x] || x)}</h3><p class="hint">${esc(COMDESC[x] || '')}</p></div>`).join('')}</div></section>
-  <section class="blk"><h2>أسئلة شائعة</h2>
-  <details><summary>ما المطلوب للتقديم؟</summary><p>كود الطالب الجامعي، الاسم، السنة الدراسية، اللجنة، وصورة شخصية. لا نطلب الرقم القومي.</p></details>
-  <details><summary>كيف أعرف نتيجة طلبي؟</summary><p>بعد التقديم يظهر لك كود طلب مرة واحدة؛ احتفظ به واستخدمه في صفحة الاستعلام.</p></details>
-  <details><summary>ما الصور المقبولة؟</summary><p>JPG أو PNG أو WebP حتى ${(c.maxPhotoBytes / 1048576).toFixed(0)} ميجابايت.</p></details></section>
-  <footer class="hint" style="text-align:center;margin-top:2rem">© ESME — جميع الحقوق محفوظة</footer></div>`);
-}
-
-/* ───── التقديم ───── */
-const RX = { code: /^[A-Za-z0-9\-]{3,20}$/, name: /^[\p{L}][\p{L} .'\-]{2,99}$/u };
-function vApply() {
-  const c = S.cfg;
-  if (!c.open) { view('<div class="wrap narrow card"><h2>التقديم مغلق حاليًا</h2><p>سيتم الإعلان عند فتح باب التقديم.</p><a class="btn" href="#/status">استعلام عن طلب</a></div>'); return; }
-  const mb = (c.maxPhotoBytes / 1048576).toFixed(0);
-  view(`<div class="wrap narrow"><h1>التقديم لعضوية ESME</h1><form id="fa" novalidate class="card">
-  ${fld('studentCode', 'كود الطالب الجامعي', '<input id="studentCode" maxlength="20" autocomplete="off" dir="ltr">')}
-  ${fld('fullName', 'الاسم الكامل', '<input id="fullName" maxlength="100" autocomplete="name">')}
-  ${fld('year', 'السنة الدراسية', `<select id="year">${opts(c.years, 'اختر')}</select>`)}
-  ${fld('primary', 'اللجنة الأساسية', `<select id="primary">${opts(c.committees, 'اختر')}</select>`)}
-  ${fld('alt', 'اللجنة البديلة (اختياري)', `<select id="alt">${opts(c.committees, 'بدون')}</select>`)}
-  ${fld('photo', 'الصورة الشخصية', '<input id="photo" type="file" accept="image/jpeg,image/png,image/webp"><img id="pv" alt="معاينة الصورة" hidden>', `JPG أو PNG أو WebP حتى ${mb} ميجابايت`)}
-  ${fld('reason', 'سبب اختيار اللجنة', '<textarea id="reason" maxlength="1000"></textarea>', '10 أحرف على الأقل')}
-  ${fld('skills', 'المهارات والخبرات (اختياري)', '<textarea id="skills" maxlength="1000"></textarea>')}
-  <details><summary>سياسة الخصوصية</summary><p class="hint">نجمع الاسم وكود الطالب والسنة واللجنة والصورة وإجاباتك فقط، لغرض مراجعة طلب الانضمام. لا نطلب الرقم القومي. تُحذف الصور بعد مدة احتفاظ تحددها الإدارة.</p></details>
-  <label class="chk"><input type="checkbox" id="consent"> أوافق على سياسة الخصوصية واستخدام بياناتي لغرض التقديم.</label><small class="err" id="e-consent" role="alert"></small>
-  <button class="btn" id="sb" style="margin-top:.8rem">إرسال الطلب</button></form></div>`);
-  $('#photo').onchange = e => {
-    const f = e.target.files[0], pv = $('#pv'); setErr('photo');
-    if (!f) { pv.hidden = true; return; }
-    if (['image/jpeg', 'image/png', 'image/webp'].indexOf(f.type) < 0) { setErr('photo', 'نوع الصورة غير مسموح.'); e.target.value = ''; pv.hidden = true; return; }
-    if (f.size > c.maxPhotoBytes) { setErr('photo', 'حجم الصورة أكبر من الحد المسموح.'); e.target.value = ''; pv.hidden = true; return; }
-    pv.src = URL.createObjectURL(f); pv.hidden = false;
-  };
-  $('#fa').onsubmit = async ev => {
-    ev.preventDefault();
-    const v = id => $('#' + id).value.trim(), b = $('#sb'); let ok = true;
-    const chk = (id, bad, m) => { setErr(id, bad ? m : ''); if (bad) ok = false; };
-    ['studentCode', 'fullName', 'year', 'primary', 'alt', 'photo', 'reason', 'consent'].forEach(i => setErr(i));
-    chk('studentCode', !RX.code.test(v('studentCode')), 'أدخل كود طالب صحيحًا (حروف وأرقام).');
-    chk('fullName', !RX.name.test(v('fullName').replace(/\s+/g, ' ')), 'أدخل الاسم الكامل بحروف فقط.');
-    chk('year', !v('year'), 'اختر السنة الدراسية.'); chk('primary', !v('primary'), 'اختر اللجنة الأساسية.');
-    chk('alt', v('alt') && v('alt') === v('primary'), 'اللجنة البديلة يجب أن تختلف عن الأساسية.');
-    const f = $('#photo').files[0]; chk('photo', !f, 'الصورة الشخصية مطلوبة.');
-    chk('reason', v('reason').length < 10, 'اكتب سببًا من 10 أحرف على الأقل.'); chk('consent', !$('#consent').checked, 'الموافقة مطلوبة.');
-    if (!ok) { const e = document.querySelector('.err:not(:empty)'); if (e) e.scrollIntoView({ block: 'center' }); return; }
-    busy(b, true, 'جارٍ إرسال الطلب…');
-    try {
-      const data = await new Promise((res, rej) => { const r = new FileReader(); r.onload = () => res(String(r.result).split(',')[1]); r.onerror = rej; r.readAsDataURL(f); });
-      const d = await api('submit', { studentCode: v('studentCode'), fullName: v('fullName'), year: v('year'), primary: v('primary'), alt: v('alt'), reason: v('reason'), skills: v('skills'), consent: true, photoBase64: data, photoMime: f.type });
-      view(`<div class="wrap narrow card"><h1>تم استلام طلبك ✅</h1><p>احتفظ بكود الطلب التالي؛ لن يظهر مرة أخرى:</p><div class="code" id="rc">${esc(d.requestCode)}</div>
-      <p><button class="btn" id="cp">نسخ الكود</button> <a class="btn ghost" href="#/status">استعلام</a></p><p class="hint">اللجنة: ${esc(d.committee)} — الحالة: قيد المراجعة.</p></div>`);
-      $('#cp').onclick = () => navigator.clipboard.writeText(d.requestCode).then(() => toast('تم نسخ الكود'), () => toast('انسخ الكود يدويًا', 1));
-    } catch (e) { busy(b, false); if (e.field && $('#e-' + e.field)) setErr(e.field, e.message); toast(e.message || 'حدث خطأ', 1); }
-  };
-}
-
-/* ───── الاستعلام ───── */
-function vStatus() {
-  view(`<div class="wrap narrow"><h1>الاستعلام عن حالة الطلب</h1><form id="fs" class="card">${fld('code', 'كود الطلب', '<input id="code" dir="ltr" maxlength="20" autocomplete="off" placeholder="XXXX-XXXX-XXXX">')}
-  <button class="btn" id="sb">استعلام</button><div id="res" role="status" style="margin-top:1rem"></div></form></div>`);
-  $('#fs').onsubmit = async ev => {
-    ev.preventDefault(); const b = $('#sb'); busy(b, true, 'جارٍ البحث…'); $('#res').innerHTML = '';
-    try {
-      const d = await api('lookup', { code: $('#code').value });
-      $('#res').innerHTML = `<span class="st ${esc(d.status)}">${esc(ST[d.status])}</span><p><b>اللجنة:</b> ${esc(d.committee)}</p><p>${esc(d.message)}</p>`;
-    } catch (e) { $('#res').innerHTML = `<p class="err">${esc(e.code === 'NOT_FOUND' ? 'لم نجد طلبًا بهذا الكود. تحقق منه وحاول مجددًا.' : e.message)}</p>`; }
-    busy(b, false);
-  };
-}
-
-/* ───── تسجيل دخول الإدارة ───── */
-function loadGsi(cb) {
-  if (window.google && google.accounts) return cb();
-  const s = document.createElement('script'); s.src = 'https://accounts.google.com/gsi/client'; s.async = true; s.onload = cb; s.onerror = () => toast('تعذر تحميل Google', 1); document.head.appendChild(s);
-}
-function gBtn(el) {
-  if (!S.cfg.googleClientId || S.cfg.googleClientId.indexOf('REPLACE') === 0) { el.innerHTML = '<span class="hint">دخول Google غير مفعّل بعد.</span>'; return; }
-  loadGsi(() => {
-    google.accounts.id.initialize({ client_id: S.cfg.googleClientId, callback: async r => {
-      try {
-        if (S.gmode === 'link') { await api('link_google', { idToken: r.credential }); toast('تم ربط حساب Google'); const m = await api('me'); S.me = m.profile; sessionStorage.setItem('esme_p', JSON.stringify(S.me)); tAccount(); }
-        else { setSession(await api('login_google', { idToken: r.credential })); location.hash = '#/admin'; }
-      } catch (e) { toast(e.message || 'تعذر تسجيل الدخول', 1); }
-    } });
-    google.accounts.id.renderButton(el, { theme: 'outline', size: 'large', text: S.gmode === 'link' ? 'continue_with' : 'signin_with', locale: 'ar' });
+function drawFrame(c){
+  if(!frame.on)return;const t=frame.t;
+  c.save();c.translate(W/2,H/2);c.strokeStyle=gold(c,W,H);
+  c.lineWidth=t;c.strokeRect(-W/2+t/2,-H/2+t/2,W-t,H-t);
+  const i=t*2.2;c.lineWidth=Math.max(2,t/5);c.strokeRect(-W/2+i,-H/2+i,W-2*i,H-2*i);
+  const o=t*3.6,n=t*7;c.lineWidth=t/2;c.lineCap='square';
+  [[-1,-1],[1,-1],[-1,1],[1,1]].forEach(([sx,sy])=>{
+    const x=sx*(W/2-o),y=sy*(H/2-o);
+    c.beginPath();c.moveTo(x,y-sy*-n*-1);c.lineTo(x,y);c.lineTo(x-sx*n,y);c.stroke();
   });
+  c.restore();
 }
-function vLogin() {
-  S.gmode = 'login';
-  view(`<div class="wrap narrow"><h1>دخول الإدارة</h1><div class="card"><form id="fl" novalidate>${fld('email', 'البريد الإلكتروني', '<input id="email" type="email" dir="ltr" autocomplete="username">')}
-  ${fld('pw', 'كلمة المرور', '<input id="pw" type="password" dir="ltr" autocomplete="current-password">')}<button class="btn" id="sb">دخول</button> <button type="button" class="btn ghost sm" id="fg">نسيت كلمة المرور؟</button></form>
-  <div class="sep">أو</div><div id="gb"></div></div></div>`);
-  gBtn($('#gb'));
-  $('#fl').onsubmit = async ev => {
-    ev.preventDefault(); const b = $('#sb'); busy(b, true, 'جارٍ الدخول…');
-    try { setSession(await api('login_password', { email: $('#email').value, password: $('#pw').value })); location.hash = '#/admin'; }
-    catch (e) { busy(b, false); setErr('pw', e.message); }
-  };
-  $('#fg').onclick = () => {
-    openDlg(`<h3>استعادة كلمة المرور</h3><form id="r1">${fld('re', 'البريد الإلكتروني', '<input id="re" type="email" dir="ltr">')}<button class="btn sm">إرسال الرمز</button></form>
-    <form id="r2" hidden>${fld('rc', 'الرمز المرسل إلى بريدك', '<input id="rc" dir="ltr" maxlength="12">')}${fld('rn', 'كلمة المرور الجديدة (12 حرفًا على الأقل)', '<input id="rn" type="password" dir="ltr" autocomplete="new-password">')}<button class="btn sm">تأكيد</button></form>`);
-    $('#r1').onsubmit = async e => { e.preventDefault(); try { await api('reset_request', { email: $('#re').value }); toast('إن كان الحساب موجودًا فقد أُرسل الرمز.'); $('#r2').hidden = false; } catch (x) { toast(x.message, 1); } };
-    $('#r2').onsubmit = async e => { e.preventDefault(); try { await api('reset_confirm', { email: $('#re').value, code: $('#rc').value, newPassword: $('#rn').value }); $('#dlg').close(); toast('تم تغيير كلمة المرور، سجّل الدخول.'); } catch (x) { setErr('rn', x.message); } };
-  };
-}
-
-/* ───── لوحة الإدارة ───── */
-const Q = { page: 1, q: '', f: {} };
-function vAdmin() {
-  if (!S.me) { location.hash = '#/login'; return; }
-  const sup = S.me.role === 'SUPER_ADMIN';
-  const tabs = S.me.mustChange ? [['acc', 'حسابي']] : [['ov', 'نظرة عامة'], ['ap', 'الطلبات'], ...(sup ? [['ad', 'الأدمنز'], ['se', 'الإعدادات'], ['au', 'السجل']] : []), ['acc', 'حسابي']];
-  view(`<div class="wrap"><h1>لوحة الإدارة</h1><p class="hint">${esc(S.me.email)} — ${sup ? 'مسؤول رئيسي' : 'رئيس لجنة ' + esc(S.me.committee)}</p>
-  ${S.me.mustChange ? '<div class="card" style="border-color:var(--gold)">يجب تغيير كلمة المرور المؤقتة قبل المتابعة.</div>' : ''}
-  <div class="tabs" role="tablist">${tabs.map(t => `<button role="tab" data-t="${t[0]}">${t[1]}</button>`).join('')}</div><div id="tab"></div></div>`);
-  const fn = { ov: tOverview, ap: tApps, ad: tAdmins, se: tSettings, au: tAudit, acc: tAccount };
-  document.querySelectorAll('.tabs button').forEach(b => b.onclick = () => { document.querySelectorAll('.tabs button').forEach(x => x.classList.toggle('on', x === b)); $('#tab').innerHTML = '<div class="empty"><span class="spin"></span></div>'; fn[b.dataset.t](); });
-  document.querySelector('.tabs button').click();
-}
-async function guard(f) { try { return await f(); } catch (e) { if (e.code !== 'AUTH') toast(e.message || 'حدث خطأ', 1); return null; } }
-
-async function tOverview() {
-  const d = await guard(() => api('stats')); if (!d) return;
-  const bs = d.byStatus, rows = Object.keys(d.byCommittee);
-  $('#tab').innerHTML = `<div class="grid"><div class="card stat"><span>إجمالي الطلبات</span><b>${d.total}</b></div>${['PENDING', 'ACCEPTED', 'REJECTED'].map(k => `<div class="card stat"><span class="st ${k}">${ST[k]}</span><b>${bs[k] || 0}</b></div>`).join('')}</div>
-  <div class="card tw" style="margin-top:1rem"><h3>حسب اللجنة</h3>${rows.length ? `<table><tr><th>اللجنة</th><th>قيد المراجعة</th><th>مقبول</th><th>غير مقبول</th></tr>${rows.map(k => `<tr><td>${esc(k)}</td><td>${d.byCommittee[k].PENDING}</td><td>${d.byCommittee[k].ACCEPTED}</td><td>${d.byCommittee[k].REJECTED}</td></tr>`).join('')}</table>` : '<div class="empty">لا توجد طلبات بعد.</div>'}</div>`;
-}
-
-async function tApps() {
-  const sup = S.me.role === 'SUPER_ADMIN', c = S.cfg;
-  $('#tab').innerHTML = `<div class="bar"><input id="q" placeholder="بحث: الاسم أو كود الطالب أو كود الطلب" value="${esc(Q.q)}" aria-label="بحث">
-  ${sup ? `<select id="fc" aria-label="اللجنة">${opts(c.committees, 'كل اللجان')}</select>` : ''}<select id="fy" aria-label="السنة">${opts(c.years, 'كل السنوات')}</select>
-  <select id="fst" aria-label="الحالة"><option value="">كل الحالات</option>${Object.keys(ST).map(k => `<option value="${k}">${ST[k]}</option>`).join('')}</select>
-  <input type="date" id="ff" aria-label="من تاريخ"><input type="date" id="ft" aria-label="إلى تاريخ"><button class="btn sm" id="go">بحث</button><button class="btn sm ghost" id="ex">تصدير CSV</button></div><div id="list" class="card tw"></div>`;
-  const map = { fc: 'committee', fy: 'year', fst: 'status', ff: 'from', ft: 'to' };
-  Object.keys(map).forEach(k => { const e = $('#' + k); if (e) e.value = Q.f[map[k]] || ''; });
-  const read = () => { Q.q = $('#q').value.trim(); Q.f = {}; Object.keys(map).forEach(k => { const e = $('#' + k); if (e && e.value) Q.f[map[k]] = e.value; }); };
-  $('#go').onclick = () => { read(); Q.page = 1; load(); }; $('#q').onkeydown = e => { if (e.key === 'Enter') $('#go').click(); };
-  $('#ex').onclick = async () => {
-    read(); const d = await guard(() => api('export_csv', { q: Q.q, filters: Q.f })); if (!d) return;
-    const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([d.csv], { type: 'text/csv;charset=utf-8' })); a.download = d.filename; a.click(); toast('تم تصدير ' + d.rows + ' صف');
-  };
-  async function load() {
-    $('#list').innerHTML = '<div class="empty"><span class="spin"></span></div>';
-    const d = await guard(() => api('list_applicants', { page: Q.page, pageSize: 15, q: Q.q, filters: Q.f })); if (!d) { $('#list').innerHTML = '<div class="empty">تعذر التحميل.</div>'; return; }
-    if (!d.rows.length) { $('#list').innerHTML = '<div class="empty">لا توجد طلبات مطابقة.</div>'; return; }
-    const pages = Math.ceil(d.total / d.pageSize);
-    $('#list').innerHTML = `<table><tr><th>الاسم</th><th>الكود</th><th>السنة</th><th>اللجنة</th><th>الحالة</th><th>التاريخ</th><th></th></tr>${d.rows.map(r => `<tr><td>${esc(r.fullName)}</td><td dir="ltr">${esc(r.studentCode)}</td><td>${esc(r.year)}</td><td>${esc(r.primary)}</td><td><span class="st ${esc(r.status)}">${esc(ST[r.status])}</span></td><td>${esc(r.createdAt.slice(0, 10))}</td><td><button class="btn sm ghost" data-id="${esc(r.id)}">عرض</button></td></tr>`).join('')}</table>
-    <div class="pg"><button class="btn sm ghost" id="pp" ${d.page <= 1 ? 'disabled' : ''}>السابق</button><span>${d.page} / ${pages} (${d.total})</span><button class="btn sm ghost" id="pn" ${d.page >= pages ? 'disabled' : ''}>التالي</button></div>`;
-    $('#pp').onclick = () => { Q.page--; load(); }; $('#pn').onclick = () => { Q.page++; load(); };
-    document.querySelectorAll('[data-id]').forEach(b => b.onclick = () => detail(b.dataset.id, load));
-  }
-  load();
-}
-async function detail(id, reload) {
-  const d = await guard(() => api('get_applicant', { id })); if (!d) return;
-  const sup = S.me.role === 'SUPER_ADMIN', can = sup || d.status === 'PENDING';
-  const dl = openDlg(`<h3>${esc(d.fullName)}</h3><dl class="kv"><dt>كود الطالب</dt><dd dir="ltr">${esc(d.studentCode)}</dd><dt>السنة</dt><dd>${esc(d.year)}</dd><dt>اللجنة</dt><dd>${esc(d.primary)}${d.alt ? ' (بديلة: ' + esc(d.alt) + ')' : ''}</dd>
-  <dt>الحالة</dt><dd><span class="st ${esc(d.status)}">${esc(ST[d.status])}</span></dd><dt>سبب الاختيار</dt><dd>${esc(d.answers.reason)}</dd><dt>المهارات</dt><dd>${esc(d.answers.skills || '—')}</dd></dl>
-  <p><button class="btn sm ghost" id="ph">عرض الصورة</button></p><div id="pw"></div>
-  ${d.history.length ? `<h4>سجل القرارات</h4><ul>${d.history.map(h => `<li>${esc(h.Time.slice(0, 16).replace('T', ' '))} — ${esc(ST[h.FromStatus])} ← ${esc(ST[h.ToStatus])} (${esc(h.ActorEmail)})${h.Reason ? ': ' + esc(h.Reason) : ''}</li>`).join('')}</ul>` : ''}
-  ${can ? `<form id="fd">${fld('why', sup && d.status !== 'PENDING' ? 'سبب التصحيح (مطلوب)' : 'سبب القرار (مطلوب عند الرفض)', '<textarea id="why" maxlength="500"></textarea>')}<button class="btn ok sm" data-d="ACCEPTED" type="button">قبول</button> <button class="btn bad sm" data-d="REJECTED" type="button">رفض</button></form>` : '<p class="hint">القرار نهائي. التصحيح للمسؤول الرئيسي فقط.</p>'}`);
-  $('#ph').onclick = async e => { e.target.disabled = true; const p = await guard(() => api('get_photo', { id })); e.target.disabled = false; if (p) $('#pw').innerHTML = `<img alt="صورة المتقدم" style="max-width:100%;max-height:300px;border-radius:12px" src="data:${esc(p.mime)};base64,${p.data}">`; };
-  document.querySelectorAll('[data-d]').forEach(b => b.onclick = async () => {
-    if (!confirm('تأكيد القرار: ' + ST[b.dataset.d] + '؟')) return;
-    const r = await guard(() => api('decide', { id, decision: b.dataset.d, reason: $('#why').value })); if (r) { dl.close(); toast('تم حفظ القرار'); reload(); }
-  });
-}
-
-async function tAdmins() {
-  const list = await guard(() => api('admins_list')); if (!list) return;
-  $('#tab').innerHTML = `<div class="card tw"><table><tr><th>البريد</th><th>الدور</th><th>اللجنة</th><th>الحالة</th><th>Google</th><th></th></tr>${list.map(a => `<tr><td dir="ltr">${esc(a.email)}</td><td>${a.role === 'SUPER_ADMIN' ? 'مسؤول رئيسي' : 'رئيس لجنة'}</td><td>${esc(a.committee || '—')}</td><td>${a.active ? 'نشط' : 'موقوف'}</td><td>${a.googleLinked ? 'مربوط' : '—'}</td>
-  <td><button class="btn sm ghost" data-a="e" data-i="${esc(a.id)}">تعديل</button> <button class="btn sm ghost" data-a="r" data-i="${esc(a.id)}">إعادة تعيين</button> <button class="btn sm ghost" data-a="t" data-i="${esc(a.id)}" data-on="${a.active}">${a.active ? 'إيقاف' : 'تفعيل'}</button>${a.googleLinked ? ` <button class="btn sm ghost" data-a="u" data-i="${esc(a.id)}">فك Google</button>` : ''}</td></tr>`).join('')}</table></div>
-  <form id="nf" class="card" style="margin-top:1rem"><h3>إضافة أدمن</h3>${fld('ne', 'البريد الإلكتروني', '<input id="ne" type="email" dir="ltr">')}${fld('nr', 'الدور', '<select id="nr"><option value="COMMITTEE_HEAD">رئيس لجنة</option><option value="SUPER_ADMIN">مسؤول رئيسي</option></select>')}
-  ${fld('nc', 'اللجنة', `<select id="nc">${opts(['Academic', 'HR', 'PR', 'Media', 'OC'])}</select>`)}<button class="btn sm">إضافة</button></form>`;
-  const tmp = (m, t) => openDlg(`<h3>${m}</h3><p>كلمة المرور المؤقتة (تظهر مرة واحدة، وسيُطلب تغييرها):</p><div class="code" style="font-size:1.2rem">${esc(t)}</div>`);
-  $('#nf').onsubmit = async e => { e.preventDefault(); const r = await guard(() => api('admin_create', { email: $('#ne').value, role: $('#nr').value, committee: $('#nc').value })); if (r) { tmp('تم إنشاء الحساب', r.tempPassword); tAdmins(); } };
-  document.querySelectorAll('[data-a]').forEach(b => b.onclick = async () => {
-    const id = b.dataset.i, a = list.find(x => x.id === id), why = () => prompt('السبب (اختياري):') || '';
-    if (b.dataset.a === 'r') { if (!confirm('إعادة تعيين كلمة مرور ' + a.email + '؟ ستُبطل جلساته.')) return; const r = await guard(() => api('admin_reset_password', { id, reason: why() })); if (r) tmp('تمت إعادة التعيين', r.tempPassword); }
-    if (b.dataset.a === 't') { const on = b.dataset.on !== 'true'; if (!confirm((on ? 'تفعيل ' : 'إيقاف ') + a.email + '؟')) return; if (await guard(() => api('admin_set_active', { id, active: on, reason: why() }))) tAdmins(); }
-    if (b.dataset.a === 'u') { if (!confirm('فك ربط Google لـ ' + a.email + '؟')) return; if (await guard(() => api('admin_unlink_google', { id, reason: why() }))) tAdmins(); }
-    if (b.dataset.a === 'e') {
-      const dl = openDlg(`<h3>تعديل ${esc(a.email)}</h3><form id="ef">${fld('ee', 'البريد (تغييره يفك ربط Google)', `<input id="ee" type="email" dir="ltr" value="${esc(a.email)}">`)}${fld('er', 'الدور', `<select id="er"><option value="COMMITTEE_HEAD">رئيس لجنة</option><option value="SUPER_ADMIN">مسؤول رئيسي</option></select>`)}${fld('ec', 'اللجنة', `<select id="ec">${opts(['Academic', 'HR', 'PR', 'Media', 'OC'])}</select>`)}${fld('ew', 'السبب', '<input id="ew" maxlength="200">')}<button class="btn sm">حفظ</button></form>`);
-      $('#er').value = a.role; $('#ec').value = a.committee || 'Academic';
-      $('#ef').onsubmit = async ev => { ev.preventDefault(); if (!confirm('سيتم إبطال جلسات هذا الحساب. متابعة؟')) return; const r = await guard(() => api('admin_update', { id, email: $('#ee').value, role: $('#er').value, committee: $('#ec').value, reason: $('#ew').value })); if (r) { dl.close(); tAdmins(); } };
+function render(c,ui,k){
+  c.save();c.scale(k,k);
+  if(!transp){c.fillStyle=bg;c.fillRect(0,0,W,H)}
+  for(const l of L){
+    const[w,h]=dims(l);
+    c.save();c.translate(l.x,l.y);c.rotate(l.r*Math.PI/180);c.scale(l.f?-1:1,1);c.globalAlpha=l.o;
+    if(l.t==='txt'){c.scale(l.s,l.s);drawText(c,l)}
+    else{
+      c.imageSmoothingQuality='high';c.drawImage(l.img,-w/2,-h/2,w,h);
+      if(l.bd>0){c.lineWidth=l.bd;c.strokeStyle=gold(c,w,h);c.strokeRect(-w/2,-h/2,w,h)}
     }
-  });
+    c.restore();
+  }
+  drawFrame(c);
+  if(ui&&sel){
+    const u=W/cv.getBoundingClientRect().width||1;const[w,h]=dims(sel);
+    c.save();c.translate(sel.x,sel.y);c.rotate(sel.r*Math.PI/180);
+    c.lineWidth=2*u;c.strokeStyle='#d4a94f';c.setLineDash([8*u,6*u]);c.strokeRect(-w/2,-h/2,w,h);c.setLineDash([]);
+    c.fillStyle='#d4a94f';c.beginPath();c.arc(w/2,h/2,12*u,0,7);c.fill();c.restore();
+  }
+  c.restore();
 }
+function draw(){render(ctx,true,1);syncUI()}
+function syncUI(){
+  const on=!!sel,isT=on&&sel.t==='txt',isI=on&&sel.t==='img';
+  ['sc','rt','op','fh'].forEach(i=>$(i).disabled=!on);
+  $('bd').disabled=!isI;['tx','fo','tc','tg','tb'].forEach(i=>$(i).disabled=!isT);
+  if(!sel)return;
+  $('sc').value=Math.round(sel.s*100);$('scv').textContent=Math.round(sel.s*100)+'%';
+  $('rt').value=Math.round(sel.r);$('rtv').textContent=Math.round(sel.r)+'°';
+  $('op').value=Math.round(sel.o*100);$('opv').textContent=Math.round(sel.o*100)+'%';
+  $('fh').checked=sel.f;
+  if(isI){$('bd').value=sel.bd;$('bdv').textContent=sel.bd}
+  if(isT){
+    if(document.activeElement!==$('tx'))$('tx').value=sel.txt;
+    $('fo').value=sel.font;$('tc').value=sel.col;$('tg').checked=sel.g;$('tb').checked=sel.b;
+  }
+}
+function pt(e){const r=cv.getBoundingClientRect();return{x:(e.clientX-r.left)*W/r.width,y:(e.clientY-r.top)*W/r.width}}
+function local(l,p){const a=-l.r*Math.PI/180,dx=p.x-l.x,dy=p.y-l.y;return{x:dx*Math.cos(a)-dy*Math.sin(a),y:dx*Math.sin(a)+dy*Math.cos(a)}}
+cv.addEventListener('pointerdown',e=>{
+  const p=pt(e),u=W/cv.getBoundingClientRect().width;
+  if(sel){const q=local(sel,p),[w,h]=dims(sel);
+    if(Math.hypot(q.x-w/2,q.y-h/2)<26*u){cv.setPointerCapture(e.pointerId);drag={m:'s',d0:Math.hypot(p.x-sel.x,p.y-sel.y),s0:sel.s};return}}
+  let hit=null;
+  for(let i=L.length-1;i>=0;i--){const l=L[i],q=local(l,p),[w,h]=dims(l);if(Math.abs(q.x)<=w/2&&Math.abs(q.y)<=h/2){hit=l;break}}
+  sel=hit;
+  if(hit){cv.setPointerCapture(e.pointerId);drag={m:'m',ox:p.x-hit.x,oy:p.y-hit.y}}
+  draw();
+});
+cv.addEventListener('pointermove',e=>{
+  if(!drag||!sel)return;const p=pt(e);
+  if(drag.m==='m'){sel.x=p.x-drag.ox;sel.y=p.y-drag.oy}
+  else{sel.s=Math.max(.05,Math.min(5,drag.s0*Math.hypot(p.x-sel.x,p.y-sel.y)/drag.d0))}
+  draw();
+});
+['pointerup','pointercancel'].forEach(t=>cv.addEventListener(t,()=>drag=null));
+cv.addEventListener('wheel',e=>{if(!sel)return;e.preventDefault();sel.s=Math.max(.05,Math.min(5,sel.s*(e.deltaY<0?1.05:.95)));draw()},{passive:false});
 
-async function tSettings() {
-  const s = await guard(() => api('settings_get')); if (!s) return;
-  const en = s.EnabledCommittees.split(',');
-  $('#tab').innerHTML = `<form id="sf" class="card"><label class="chk"><input type="checkbox" id="so" ${s.RegistrationOpen === 'TRUE' ? 'checked' : ''}> التقديم مفتوح</label>
-  <div class="f"><label>اللجان المتاحة</label>${['Academic', 'HR', 'PR', 'Media', 'OC'].map(c => `<label class="chk"><input type="checkbox" name="ec" value="${c}" ${en.indexOf(c) >= 0 ? 'checked' : ''}> ${c}</label>`).join('')}</div>
-  ${fld('sm', 'الحد الأقصى للصورة (ميجابايت، حتى 5)', `<input id="sm" type="number" min="1" max="5" step="0.5" value="${(Number(s.MaxPhotoBytes) / 1048576).toFixed(1)}">`)}
-  ${fld('sr', 'مدة الاحتفاظ بالصور (أيام)', `<input id="sr" type="number" min="1" max="3650" value="${esc(s.RetentionDays)}">`)}<button class="btn">حفظ الإعدادات</button></form>`;
-  $('#sf').onsubmit = async e => {
-    e.preventDefault(); if (!confirm('حفظ الإعدادات؟')) return;
-    const ec = [...document.querySelectorAll('[name=ec]:checked')].map(x => x.value).join(',');
-    if (!ec) { toast('اختر لجنة واحدة على الأقل', 1); return; }
-    const set = (key, value) => api('settings_set', { key, value: String(value) });
-    const r = await guard(async () => { await set('RegistrationOpen', $('#so').checked ? 'TRUE' : 'FALSE'); await set('EnabledCommittees', ec); await set('MaxPhotoBytes', Math.round(Number($('#sm').value) * 1048576)); return set('RetentionDays', Math.round(Number($('#sr').value))); });
-    if (r) { toast('تم الحفظ'); S.cfg = await api('public_config'); nav(); }
+function addImg(file){
+  const url=URL.createObjectURL(file),img=new Image();
+  img.onload=()=>{
+    const k=Math.min(W*.7/img.naturalWidth,H*.7/img.naturalHeight);
+    const l={t:'img',img,bw:img.naturalWidth*k,bh:img.naturalHeight*k,s:1,x:W/2,y:H/2,r:0,o:1,f:false,bd:0};
+    L.push(l);sel=l;draw();
   };
+  img.src=url;
 }
-async function tAudit() {
-  const d = await guard(() => api('audit_list')); if (!d) return;
-  $('#tab').innerHTML = `<div class="card tw">${d.length ? `<table><tr><th>الوقت</th><th>المنفذ</th><th>الإجراء</th><th>الهدف</th><th>قبل</th><th>بعد</th><th>السبب</th></tr>${d.map(r => `<tr><td>${esc(r.Time.slice(0, 16).replace('T', ' '))}</td><td dir="ltr">${esc(r.ActorEmail)}</td><td>${esc(r.Action)}</td><td>${esc(r.TargetID)}</td><td>${esc(r.OldValue)}</td><td>${esc(r.NewValue)}</td><td>${esc(r.Reason)}</td></tr>`).join('')}</table>` : '<div class="empty">السجل فارغ.</div>'}</div>`;
+async function addTxt(o){
+  const l=Object.assign({t:'txt',txt:'اكتب هنا',font:'Cairo',fs:80,col:'#f3ecd8',g:true,b:true,s:1,x:W/2,y:H/2,r:0,o:1,f:false},o);
+  try{await document.fonts.load(fontStr(l),l.txt)}catch(e){}
+  meas(l);L.push(l);sel=l;draw();return l;
 }
-function tAccount() {
-  $('#tab').innerHTML = `<form id="pf" class="card">${fld('po', 'كلمة المرور الحالية', '<input id="po" type="password" dir="ltr" autocomplete="current-password">')}${fld('pn', 'كلمة المرور الجديدة (12 حرفًا على الأقل)', '<input id="pn" type="password" dir="ltr" autocomplete="new-password">')}<button class="btn sm">تغيير كلمة المرور</button></form>
-  <div class="card" style="margin-top:1rem"><h3>ربط Google</h3>${S.me.googleLinked ? '<p>حسابك مربوط بـ Google.</p>' : '<p class="hint">يجب أن يطابق بريد Google بريد حسابك.</p><div id="gb"></div>'}</div>`;
-  $('#pf').onsubmit = async e => { e.preventDefault(); const r = await guard(() => api('change_password', { oldPassword: $('#po').value, newPassword: $('#pn').value })); if (r) { localOut(); toast('تم التغيير، سجّل الدخول من جديد.'); location.hash = '#/login'; } };
-  if (!S.me.googleLinked) { S.gmode = 'link'; gBtn($('#gb')); }
+$('add').onclick=()=>$('file').click();
+$('file').onchange=e=>{[...e.target.files].forEach(addImg);e.target.value=''};
+$('addtx').onclick=()=>addTxt({});
+$('sc').oninput=e=>{if(sel){sel.s=e.target.value/100;draw()}};
+$('rt').oninput=e=>{if(sel){sel.r=+e.target.value;draw()}};
+$('op').oninput=e=>{if(sel){sel.o=e.target.value/100;draw()}};
+$('bd').oninput=e=>{if(sel&&sel.t==='img'){sel.bd=+e.target.value;draw()}};
+$('fh').onchange=e=>{if(sel){sel.f=e.target.checked;draw()}};
+$('tx').oninput=e=>{if(sel&&sel.t==='txt'){sel.txt=e.target.value||' ';meas(sel);draw()}};
+$('fo').onchange=async e=>{if(sel&&sel.t==='txt'){sel.font=e.target.value;try{await document.fonts.load(fontStr(sel),sel.txt)}catch(x){}meas(sel);draw()}};
+$('tc').oninput=e=>{if(sel&&sel.t==='txt'){sel.col=e.target.value;sel.g=false;draw()}};
+$('tg').onchange=e=>{if(sel&&sel.t==='txt'){sel.g=e.target.checked;draw()}};
+$('tb').onchange=async e=>{if(sel&&sel.t==='txt'){sel.b=e.target.checked;try{await document.fonts.load(fontStr(sel),sel.txt)}catch(x){}meas(sel);draw()}};
+$('ctr').onclick=()=>{if(sel){sel.x=W/2;sel.y=H/2;draw()}};
+function fitTo(mode){if(!sel)return;sel.r=0;const k=(mode==='fill'?Math.max:Math.min)(W/sel.bw,H/sel.bh);sel.s=k;sel.x=W/2;sel.y=H/2;draw()}
+$('fill').onclick=()=>fitTo('fill');$('fit').onclick=()=>fitTo('fit');
+$('del').onclick=()=>{if(sel){L=L.filter(l=>l!==sel);sel=L[L.length-1]||null;draw()}};
+$('up').onclick=()=>{if(!sel)return;const i=L.indexOf(sel);if(i<L.length-1){[L[i],L[i+1]]=[L[i+1],L[i]];draw()}};
+$('dn').onclick=()=>{if(!sel)return;const i=L.indexOf(sel);if(i>0){[L[i],L[i-1]]=[L[i-1],L[i]];draw()}};
+
+function applySize(w,h){W=Math.max(100,Math.min(8000,w|0));H=Math.max(100,Math.min(8000,h|0));$('cw').value=W;$('ch').value=H;size()}
+$('pre').onchange=e=>{if(e.target.value!=='custom'){const[w,h]=e.target.value.split('x');applySize(+w,+h)}};
+['cw','ch'].forEach(i=>$(i).onchange=()=>{$('pre').value='custom';applySize(+$('cw').value,+$('ch').value)});
+$('bgc').oninput=e=>{bg=e.target.value;draw()};
+$('tr').onchange=e=>{transp=e.target.checked;draw()};
+$('fr').onchange=e=>{frame.on=e.target.checked;draw()};
+$('ft').oninput=e=>{frame.t=+e.target.value;$('ftv').textContent=frame.t;draw()};
+
+const TPL={
+  banner:{w:1920,h:1080,ti:{x:1330,y:150,fs:80},lg:{x:330,y:120,fs:130},ph:{x:960,y:640,w:1500,h:740}},
+  square:{w:1080,h:1080,ti:{x:540,y:170,fs:60},lg:{x:540,y:985,fs:84},ph:{x:540,y:580,w:900,h:560}},
+  story:{w:1080,h:1920,ti:{x:540,y:300,fs:70},lg:{x:540,y:1690,fs:110},ph:{x:540,y:960,w:900,h:960}}
+};
+async function applyTpl(k){
+  const T=TPL[k];
+  bg='#0b0b0b';transp=false;$('bgc').value=bg;$('tr').checked=false;
+  frame.on=true;$('fr').checked=true;
+  applySize(T.w,T.h);
+  $('pre').value=T.w+'x'+T.h;
+  L=L.filter(l=>l.t==='img');
+  const im=L[0];
+  if(im){const s=Math.min(T.ph.w/im.bw,T.ph.h/im.bh);Object.assign(im,{s,x:T.ph.x,y:T.ph.y,r:0,f:false,bd:6})}
+  await addTxt({txt:'ESMS',font:'Playfair Display',fs:T.lg.fs,x:T.lg.x,y:T.lg.y});
+  await addTxt({txt:'EGYPTIAN STOCK MARKET SIMULATION',font:'Cairo',fs:Math.round(T.lg.fs*.2),g:false,col:'#d4a94f',x:T.lg.x,y:T.lg.y+T.lg.fs*.78});
+  await addTxt({txt:'خطوة جديدة لطلاب سنة أولى\nلاكتشاف عالم البورصة مع ESMS',font:'Cairo',fs:T.ti.fs,x:T.ti.x,y:T.ti.y});
+  $('msg').textContent=im?'تم تطبيق القالب. عدّل العنوان من «النص المحدد».':'تم تطبيق القالب. أضف صورتك من «+ صور».';
 }
-route();
+document.querySelectorAll('[data-t]').forEach(b=>b.onclick=()=>applyTpl(b.dataset.t));
+
+$('dl').onclick=async()=>{
+  const msg=$('msg');msg.textContent='';
+  let fmt=$('fmt').value,k=+$('mul').value;
+  if(fmt==='jpg'&&transp){transp=false;$('tr').checked=false}
+  const o=document.createElement('canvas');o.width=W*k;o.height=H*k;
+  const c=o.getContext('2d');
+  if(fmt==='jpg'){c.fillStyle=bg;c.fillRect(0,0,o.width,o.height)}
+  render(c,false,k);
+  const mime=fmt==='jpg'?'image/jpeg':'image/'+fmt;
+  const blob=await new Promise(r=>o.toBlob(r,mime,.95));
+  if(!blob){msg.textContent='تعذّر إنشاء الصورة، جرّب مقاسًا أصغر.';return}
+  const name='design-'+(W*k)+'x'+(H*k)+'.'+fmt;
+  try{
+    const d=window.claude&&await claude.use('downloads');
+    if(d){await d.save({filename:name,data:blob});msg.textContent='تم الحفظ: '+name}
+    else{msg.textContent='التنزيل غير متاح هنا. افتح الصفحة في المتصفح.'}
+  }catch(err){msg.textContent=err&&err.code==='declined'?'تم الإلغاء.':'تعذّر التنزيل.'}
+};
+size();
+document.fonts.ready.then(()=>{L.forEach(l=>l.t==='txt'&&meas(l));draw()});
 </script>
 </body>
 </html>
